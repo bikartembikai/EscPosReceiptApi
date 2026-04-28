@@ -2,10 +2,8 @@
 
 namespace WebApplication1.Controllers
 {
-    public class ReceiptPrintController
-    {
-        [ApiController]
-        [Route("api/[controller]")]
+    [ApiController]
+    [Route("[controller]")] 
         public class PrintController : ControllerBase
         {
             private readonly ReceiptPrinterService _printerService;
@@ -30,5 +28,5 @@ namespace WebApplication1.Controllers
                 }
             }
         }
-    }
+    
 }
